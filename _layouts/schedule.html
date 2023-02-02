@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="schedule">
+{%- if site.shows.size > 0 -%}
+<h2 class="post-list-heading">{{ page.list_title | default: "Upcoming Shows" }}</h2>
+<ul class="post-list">
+  {% assign curDate = site.time | date: '%s' %}
+  {%- for show in site.shows -%}
+    {% assign showStartDate = show.date | date: '%s' %}
+    {% if showStartDate >= curDate %}
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta">{{ show.date | date: date_format }}</span>
+    <h3>
+      <a class="post-link" href="{{ show.url | relative_url }}">
+        {{ show.title | escape }}
+      </a>
+    </h3>
+    {%- if site.show_excerpts -%}
+      {{ show.excerpt }}
+    {%- endif -%}
+  </li>
+  {% endif %}
+  {%- endfor -%}
+</ul>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+{%- endif -%}
+</div>

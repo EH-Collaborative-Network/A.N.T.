@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="archive">
+    {%- if site.shows.size > 0 -%}
+    {% assign curDate = site.time | date: '%s' %}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Previous Shows" }}</h2>
+    <ul class="post-list">
+      {% assign showsReversed = site.shows | reverse %}
+      {%- for show in showsReversed -%}
+        {% assign showStartDate = show.date | date: '%s' %}
+        {% if curDate >= showStartDate %}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ show.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ show.url | relative_url }}">
+            {{ show.title | escape }}
+          </a>
+          {%- if show.featuring -%}
+            {{ show.featuring }}
+          {%- endif -%}
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ show.excerpt }}
+        {%- endif -%}
+      </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+    
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
+</div>

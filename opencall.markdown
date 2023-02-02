@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Open Call
+permalink: /opencall/
 ---
 
-This is the about page
+This is the open call page
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /

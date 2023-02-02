@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="events">
+    {%- if site.events.size > 0 -%}
+    {% assign curDate = site.time | date: '%s' %}
+    {% assign eventsReversed = site.events | reverse %}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Events" }}</h2>
+    <ul class="post-list">
+      {%- for event in eventsReversed -%}
+      {% assign eventStartDate = event.date | date: '%s' %}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ event.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ event.url | relative_url }}">
+            {{ event.title | escape }} 
+            {% if curDate >= eventStartDate %}
+              <sup><em> (past event)</em></sup>
+          {% endif %}
+          </a>
+        </h3>
+        {%- if site.event_excerpts -%}
+          {{ event.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+    
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    {%- endif -%}
+</div>
