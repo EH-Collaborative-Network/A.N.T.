@@ -8,16 +8,50 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-  {% assign curDate = site.time | date: '%s' %}
-  {%- for show in site.shows limit:1 -%}
-    {% assign showStartDate = show.date | date: '%s' %}
-      <h2>{{show.title}}</h2>
-      <h4>{{show.date | date: '%b %e, %R'}} - {{show.end | date: '%R'}} </h4>
-      {% if showStartDate <= curDate %}
-        <em>This live stream is over. Visit <a href='/schedule'>the schedule</a> to view upcoming shows.</em>
-      {% endif %}
-      {{show.content}}
-  {%- endfor -%}
+  {% assign currShow =  '' | split: ''  %}
+  {% assign currDate = site.time | date: '%s' %}
+  {% assign currentItem = site.shows | where:"title","Radio" %}
+  <!-- check for currently playing shows -->
 
+  {%- for show in site.shows -%}
+    {% assign showStartDate = show.date | date: '%s' %}
+    {% assign front = show.date | date: '%F ' %} 
+    {% assign end = show.end  | prepend: front %}
+    {% assign showEndDate = end | date: '%s' %}
+    {% assign showAsArray = site.shows | where: "title", show.title %}
+    
+    {% if showEndDate >= currDate and currDate >= showStartDate %}
+      {% assign currShow = currShow | concat: showAsArray %}
+    {% endif %}
+  {%- endfor -%}
+  <!-- if no currently playing shows, loop through again and find the most recent one -->
+{% if currShow.size == 0 %}
+  {%- for show in site.shows -%}
+    {% assign showStartDate = show.date | date: '%s' %}
+    {% assign front = show.date | date: '%F ' %}
+    {% assign end = show.end  | prepend: front %}
+    {% assign showEndDate = end | date: '%s' %}
+    {% assign showAsArray = site.shows | where: "title", show.title %}
+    {% if currDate >= showStartDate %}
+    
+      {% assign currShow = currShow | concat: showAsArray %}
+    {% endif %}
+  {%- endfor -%}
+{% endif %}
+
+{%- for show in currShow limit:1 -%}
+
+    {% assign showStartDate = show.date | date: '%s' %}
+    {% assign front = show.date | date: '%F ' %} 
+    {% assign end = show.end  | prepend: front %}
+    {% assign showEndDate = end | date: '%s' %}
+    <h2>{{show.title}}</h2>
+    <h4>{{show.date | date: '%b %e, %R'}} - {{show.end | date: '%R'}} </h4>
+    <h4>{{show.featuring}} </h4>
+    {% if currDate >= showEndDate %}
+      <em>This live stream is over. Visit <a href='/schedule'>the schedule</a> to view upcoming shows.</em>
+    {% endif %}
+    {{show.content}}
+{%- endfor -%}
 
 </div>

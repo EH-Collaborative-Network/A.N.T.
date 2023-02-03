@@ -9,7 +9,10 @@ layout: default
   {% assign curDate = site.time | date: '%s' %}
   {%- for show in site.shows -%}
     {% assign showStartDate = show.date | date: '%s' %}
-    {% if showStartDate >= curDate %}
+    {% assign front = show.date | date: '%F ' %} 
+    {% assign end = show.end  | prepend: front %}
+    {% assign showEndDate = end | date: '%s' %}
+    {% if showStartDate >= curDate or showEndDate >= curDate%}
   <li>
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     <span class="post-meta">{{ show.date | date: date_format }}</span>

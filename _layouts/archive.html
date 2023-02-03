@@ -10,7 +10,10 @@ layout: default
       {% assign showsReversed = site.shows | reverse %}
       {%- for show in showsReversed -%}
         {% assign showStartDate = show.date | date: '%s' %}
-        {% if curDate >= showStartDate %}
+        {% assign front = show.date | date: '%F ' %} 
+      {% assign end = show.end  | prepend: front %}
+      {% assign showEndDate = end | date: '%s' %}
+        {% if curDate >= showEndDate %}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ show.date | date: date_format }}</span>
