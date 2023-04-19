@@ -14,12 +14,13 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.featuring }}</span></span>
       {%- endif -%}</p>
   </header>
-  {%- if page.stream_url -%}
-    <iframe src="{{ page.stream_url }}"></iframe>
-  {%- endif -%}
-  {%- if page.archive_url -%}
-    <iframe src="{{ page.archive_url }}"></iframe>
-  {%- endif -%}
+  
+  
+  {% if page.archive_url %}
+  <iframe src="https://archiveofnoisetransmission.mixlr.com/embed" frameborder="0" scrolling="no" height="300px" width="100%"></iframe>
+  {% else %}
+  <iframe src="{{page.archive_link}}" frameborder="0" scrolling="no" height="300px" width="100%"></iframe>
+  {% endif %}
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
