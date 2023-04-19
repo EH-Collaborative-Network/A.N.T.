@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: 5px solid $brand-color;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -106,9 +106,12 @@
  */
 .site-footer {
   background: $grey-color-light;
+  color: $background-color;
   padding: $spacing-unit 0;
 }
-
+.site-footer a{
+  color: $background-color;
+}
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: $spacing-unit / 2;
