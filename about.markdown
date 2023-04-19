@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 This is the about page
-
+this is what we are about. 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /
 [minima](https://github.com/jekyll/minima)
