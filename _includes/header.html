@@ -25,6 +25,14 @@
           {%- endfor -%}
         </div>
       </nav>
+      {% if page.layout != 'home' %}
+      <div id="sticky-listen"><a href="{{ "/" | relative_url }}">
+        <small> 
+          <img src="{{ "/images/pixelant.png" | relative_url }}">
+          <img src="{{ "/images/pixelant.png" | relative_url }}">
+          <img src="{{ "/images/pixelant.png" | relative_url }}">
+        <img src="{{ "/images/antfriend.png" | relative_url }}"></small> <em>listen now</em> → </a></div>
+      {% endif %}
     {%- endif -%}
   </div>
 </header>

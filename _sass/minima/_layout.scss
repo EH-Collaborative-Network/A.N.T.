@@ -23,6 +23,37 @@
   }
 }
 
+#sticky-listen{
+  position:fixed;
+  right:0;
+  text-align: center;
+  overflow: hidden;
+  bottom:120px;
+  background-color: darken($brand-color, 20%);
+  color: $background-color;
+  padding: 5px;
+  &:hover{
+    background-color: $brand-color;
+  }
+  a{
+    color: $background-color;
+    font-size: $base-font-size;
+    &:hover{
+      text-decoration: none;
+    }
+    small{
+      font-size: $base-font-size;
+      line-height:0;
+      letter-spacing: 0.2em;
+      img{
+        width:20px;
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
@@ -30,7 +61,7 @@
   .nav-trigger {
       display: none;
   }
-
+  
   .menu-icon {
     display: none;
   }
