@@ -7,7 +7,7 @@ permalink: /opencall/
 [ANT Radio Interest Form →](https://docs.google.com/forms/d/e/1FAIpQLScOlTHx2mSodMfucFK9Q58XKo7T3VXtjq3yons6Tp5z9uPJkQ/viewform)
 
 ![ANT Radio](../images/2.png)
-![We are a queer-led radio station based in Berlin, Germany, looking for carpenters, leaf-cutters, sugar, fire, crazy, and many more ants](../../images/1.png)
+![We are a queer-led radio station based in Berlin, Germany, looking for carpenters, leaf-cutters, sugar, fire, crazy, and many more ants](../images/1.png)
 ![Do you have poems, bed-time stories, a novel, jokes?](../images/3.png)
 ![Is your band about to blow up? Do you want to share your music with the world?](../images/4.png)
 ![Do you have something to say? A cause that you want to speak up about?](../images/5.png)
