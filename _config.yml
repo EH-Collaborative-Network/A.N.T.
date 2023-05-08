@@ -20,8 +20,8 @@
 
 title: The Archive of Noise Transmission Radio
 email: aakkapeddi@bard.edu
-baseurl: "/A.N.T." # the subpath of your site, e.g. /blog
-url: "https://eh-collaborative-network.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://archiveofnoisetransmission.org/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: none
 github_username:  AaratiAkkapeddi
 # Build settings
