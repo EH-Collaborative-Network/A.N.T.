@@ -8,6 +8,22 @@
 #calendar-container > *{
   transform:scale(1.5) translate(15%,7%);
 }
+#archive-container{
+  border:2px solid #111;
+
+  // pointer-events: none;
+  // background-color: #111;
+  overflow: hidden;
+  height: 450px;
+}
+#archive-container > *{
+  top:-27%;
+  z-index: 0;
+  position:relative;
+}
+.post-content img{
+  width:20%;
+}
 /**
  * Site header
  */
@@ -17,6 +33,7 @@
   border-bottom: 2px solid $brand-color;
   // Positioning context for the mobile navigation icon
   position: relative;
+  z-index: 9;
 }
 
 .site-title {
@@ -38,6 +55,7 @@
   right:0;
   text-align: center;
   overflow: hidden;
+  z-index: 9;
   bottom:120px;
   background-color: darken($brand-color, 20%);
   color: $background-color;
@@ -205,6 +223,9 @@
   .footer-col-3 {
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+  .post-content img{
+    width:100%;
   }
 }
 
