@@ -53,5 +53,12 @@ layout: default
     {% endif %}
     {{show.content}}
 {%- endfor -%} -->
-
+<!-- <iframe src="https://calendar.google.com/calendar/embed?src=archiveofnoisetransmission%40gmail.com&ctz=Europe%2FBerlin&mode=AGENDA&bgcolor=%23f8f8f8" style="border: 0;filter:grayscale(1) contrast(2);" width="100%" height="600" frameborder="0" scrolling="no"></iframe>  -->
+<br><br><h3>Schedule:</h3>
+<div id="calendar-container"></div>
+<script type="text/javascript">
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "Europe%2FBerlin"
+  const html = `<iframe src="https://calendar.google.com/calendar/embed?src=archiveofnoisetransmission%40gmail.com&mode=AGENDA&bgcolor=%23f8f8f8&ctz=${timezone}" style=" border-width:0;filter:grayscale(1) contrast(2); " width="100%" height="600" frameborder="0" scrolling="no"></iframe>`
+  document.getElementById('calendar-container').innerHTML = html;
+  </script>
 </div>

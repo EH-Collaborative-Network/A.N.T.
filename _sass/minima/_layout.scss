@@ -1,3 +1,13 @@
+#calendar-container{
+  border:2px solid #111;
+  padding: 25px;
+  // pointer-events: none;
+  background-color: #111;
+  overflow: hidden;
+}
+#calendar-container > *{
+  transform:scale(1.5) translate(15%,7%);
+}
 /**
  * Site header
  */
