@@ -38,13 +38,10 @@ layout: default
     {% endif %}
   {%- endfor -%}
 {% endif %}
+<iframe src="https://archiveofnoisetransmission.mixlr.com/embed" frameborder="0" scrolling="no" height="300px" width="100%"></iframe>
 
-{%- for show in currShow limit:1 -%}
-    {% if currDate == showEndDate %}
-    <iframe src="https://archiveofnoisetransmission.mixlr.com/embed" frameborder="0" scrolling="no" height="300px" width="100%"></iframe>
-    {% else %}
-    <iframe src="{{show.archive_link}}" frameborder="0" scrolling="no" height="300px" width="100%"></iframe>
-    {% endif %}
+<!-- {%- for show in currShow limit:1 -%}
+   
     {% assign showStartDate = show.date | date: '%s' %}
     {% assign front = show.date | date: '%F ' %} 
     {% assign end = show.end  | prepend: front %}
@@ -56,6 +53,6 @@ layout: default
       <em>This live stream is over. Visit <a href='./schedule'>the schedule</a> to view upcoming shows.</em>
     {% endif %}
     {{show.content}}
-{%- endfor -%}
+{%- endfor -%} -->
 
 </div>
