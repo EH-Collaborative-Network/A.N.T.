@@ -4,6 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Experimental radio based in Berlin on the Bard College Berlin Campus. 
+
+ At the Archive of Noise Transmission, we are creating Commonspace wherein radio serves as a unifying force, fostering intrinsically valuable embodied. By emphasizing sound as the primary medium, we aim to bridge the gap between experimental and analog artistry, cultivating a comprehensive understanding of technology. “Broadcasting” originally emerged from an agricultural context, meaning the widespread dispersal of seeds. Drawing on this etymology we firmly believe that radio bears the responsibility of serving the public interest. We are basing the model of distribution on our belief in free information and pirate radio techniques, seeking to dissolve institutional and governmental boundaries. Pre-technology, the theater underwent a transition from its origins of disseminating public news and historical narratives to becoming a commodified luxury confined to the private domain. Radio emerged as the inaugural virtual realm of electronic communication, assuming the role once lost in theater. Inter-media hybrids no longer reference reality but overlapping mediums, where the fantasy necessary to create and enact revolutionary action can exist as a fundamental right. Radio is an intersection of science, technology, media, art, and the humanities, opening up a platform for multiple mediums to interact experimentally, promoting solidarity, communication, and safe spaces for expression. As artists, we look forward to using our platform as a means to negotiate agency through sound, as opposed to relying solely on textual discourse or appealing to academic and governmental institutions.
+ 
+Inspired by the free radio movement and the resurgence of pirate radio operators reclaiming sonic space as communal resources, we have established a community radio station. Our aim is to offer a digital sphere wherein local community members can articulate their ideas freely. Our programming is collaboratively produced and distributed without restriction, providing a platform for emerging artists and activists within the city of Berlin. 
+
 
 
