@@ -14,7 +14,7 @@ _FOUNDERS (ANTS)_
 Violet Robin Schubert is an interdisciplinary artist born in Texas, USA based in Berlin, Germany 
 They strive to find connections between the self and ecology through mixed media work, performance, sculpture, and painting. Bodies as an abstract form, both human and non-human, inspire thought on movement as identity. They devote themselves to community building through art. Creativity is found through shared space, food, movement, music, and conversation. They explore love, compassion, and queerness. 
 
-<!DOCTYPE html>
+
 <html>
 <head>
   <title>Scroll Sound</title>
@@ -27,7 +27,7 @@ They strive to find connections between the self and ecology through mixed media
   </style>
 </head>
 <body>
-  <img id="scroll-image" src="(../../images/NIXIEANT.png)" alt="Scroll Image">
+  <img id="scroll-image" src="(../../images/NIXIEANT.png)" alt="NIXIE ANT">
 
   <script>
     var scrollImage = document.getElementById('scroll-image');
