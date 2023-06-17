@@ -14,7 +14,41 @@ _FOUNDERS (ANTS)_
 Violet Robin Schubert is an interdisciplinary artist born in Texas, USA based in Berlin, Germany 
 They strive to find connections between the self and ecology through mixed media work, performance, sculpture, and painting. Bodies as an abstract form, both human and non-human, inspire thought on movement as identity. They devote themselves to community building through art. Creativity is found through shared space, food, movement, music, and conversation. They explore love, compassion, and queerness. 
 
-![founder nixie with ant hat and bubbles](../../images/NIXIEANT.png)
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll Sound</title>
+  <style>
+    /* CSS styles for the image */
+    #scroll-image {
+      width: 300px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <img id="scroll-image" src="(../../images/NIXIEANT.png)" alt="Scroll Image">
+
+  <script>
+    var scrollImage = document.getElementById('scroll-image');
+
+    scrollImage.addEventListener('mouseenter', function() {
+      scrollImage.addEventListener('wheel', playSound);
+    });
+
+    scrollImage.addEventListener('mouseleave', function() {
+      scrollImage.removeEventListener('wheel', playSound);
+    });
+
+    function playSound() {
+      // You can replace the "beep.mp3" with the path to your own audio file
+      var audio = new Audio(../../images/jersey_squeaks.wav);
+      audio.play();
+    }
+  </script>
+</body>
+</html>
+
 
 Nixie Maefly is a painter, sculptural installation artist, musician, and performer. He investigates themes of erotic mysticism, queer mourning, textural interplay and jouissance. Maefly works with fairies, faggots, and tomfoolery.
 
