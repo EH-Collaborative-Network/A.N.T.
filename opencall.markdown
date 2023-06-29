@@ -10,10 +10,9 @@ A.N.T. RADIO, THE ARCHIVE OF NOISE TRANSMISSION, WOULD LIKE TO CORDIALLY INVITE 
 
 ![opencallinfo](../../images/opencall.png)
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Ant Cursor</title>
+
+
+
   <style>
     /* CSS styles for the ant element */
     #ant {
@@ -21,8 +20,8 @@ A.N.T. RADIO, THE ARCHIVE OF NOISE TRANSMISSION, WOULD LIKE TO CORDIALLY INVITE 
       font-size: 24px;
     }
   </style>
-</head>
-<body>
+
+
   <div id="ant">🐜</div>
 
   <script>
@@ -33,5 +32,4 @@ A.N.T. RADIO, THE ARCHIVE OF NOISE TRANSMISSION, WOULD LIKE TO CORDIALLY INVITE 
       ant.style.top = event.clientY + 'px';
     });
   </script>
-</body>
-</html>
+
