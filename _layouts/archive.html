@@ -4,13 +4,31 @@ layout: default
 
 <div class="archive">    
   <h2 class="post-list-heading">{{ page.list_title | default: "Previous Shows" }}</h2>
+  <a href="/archive" id="archive-back">← back to all recordings</a>
   <div id="archive-container">
       <iframe src="https://archiveofnoisetransmission.mixlr.com/recordings" style="border: 0;" width="100%" height="600" frameborder="0" scrolling="yes"></iframe> 
   </div>
-
-<!-- <script type="javascript">
-  document.querySelector("#archive-container iframe").addEventListener("mouseover", function(){
-    console.log(e.target)
-  })
-</script> -->
 </div>
+
+<script>
+  // let el = document.querySelector(".archive iframe");
+  // el.addEventListener("mouseover", function(){
+  //   document.querySelector("#archive-back").classList.add("on")
+  // })
+  var myConfObj = {
+  iframeMouseOver : false
+  }
+  window.addEventListener('blur',function(){
+    if(myConfObj.iframeMouseOver){
+      document.querySelector("#archive-back").classList.add("on")
+
+    }
+  });
+
+  document.getElementById('archive-container').addEventListener('mouseover',function(){
+    myConfObj.iframeMouseOver = true;
+  });
+  document.getElementById('archive-container').addEventListener('mouseout',function(){
+      myConfObj.iframeMouseOver = false;
+  });
+</script>

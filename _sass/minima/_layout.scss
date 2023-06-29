@@ -8,7 +8,18 @@
 #calendar-container > *{
   transform:scale(1.5) translate(15%,7%);
 }
-
+/* CSS styles for the ant element */
+body{
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" style="font-size: 20px;"><text y="16">🐜</text></svg>'), auto;
+}
+#archive-back{
+  display: none;
+}
+#archive-back.on{
+  display: inline-block;
+  position:relative;
+  margin-bottom:0.5em;
+}
 #archive-container{
   border:0px solid #111;
 

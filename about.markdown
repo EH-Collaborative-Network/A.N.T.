@@ -40,7 +40,7 @@ They strive to find connections between the self and ecology through mixed media
     scrollImage.addEventListener('mouseleave', function() {
       pauseSound()
     });
-    var audio = new Audio("../../images/jersey_squeaks.wav");
+    var audio = new Audio("../../images/jersey_squeaks2.wav");
     function playSound() {
       // You can replace the "beep.mp3" with the path to your own audio file
       audio.play();
