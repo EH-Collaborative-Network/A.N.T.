@@ -11,7 +11,7 @@ _FOUNDERS (ANTS)_
 
 ![image of founder robin with ant hat and bubbles](../../images/ROBINANT.png)
 
-Violet Robin Schubert is an interdisciplinary artist born in Texas, USA based in Berlin, Germany 
+**Violet Robin Schubert** is an interdisciplinary artist born in Texas, USA based in Berlin, Germany 
 They strive to find connections between the self and ecology through mixed media work, performance, sculpture, and painting. Bodies as an abstract form, both human and non-human, inspire thought on movement as identity. They devote themselves to community building through art. Creativity is found through shared space, food, movement, music, and conversation. They explore love, compassion, and queerness. 
 
 
@@ -50,11 +50,11 @@ They strive to find connections between the self and ecology through mixed media
 
 
 
-Nixie Maefly is a painter, sculptural installation artist, musician, and performer. He investigates themes of erotic mysticism, queer mourning, textural interplay and jouissance. Maefly works with fairies, faggots, and tomfoolery.
+**Nixie Maefly** is a painter, sculptural installation artist, musician, and performer. He investigates themes of erotic mysticism, queer mourning, textural interplay and jouissance. Maefly works with fairies, faggots, and tomfoolery.
 
 
 ![founder ani with ant hat and bubbles](../../images/ANIANT.png)
 
-ANI
+**ANI**  
 Every entity in our known existence carries a wave sign, a frequency and whether we like it or not we are sharing and receiving it all times. all the emotions, ideas and conditions we are placed with come from the same phenomenon. I’m just saying fuck it and I am going to talk shit in the forms of organically-distilled-mecha-crunchy-castrated-geeky shit until I drop. Bitch.
 
