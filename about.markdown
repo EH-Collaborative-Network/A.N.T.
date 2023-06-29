@@ -22,10 +22,13 @@ They strive to find connections between the self and ecology through mixed media
     #scroll-image {
       width: 300px;
       height: 200px;
+      overflow:scroll;
     }
   </style>
-
-  <img id="scroll-image" src="../../images/NIXIEANT.png" alt="NIXIE ANT">
+ <div id="scroll-image">
+   <img id="scroll-image" src="../../images/NIXIEANT.png" alt="NIXIE ANT">
+ </div>
+  
 
   <script>
     var scrollImage = document.getElementById('scroll-image');
@@ -40,7 +43,7 @@ They strive to find connections between the self and ecology through mixed media
 
     function playSound() {
       // You can replace the "beep.mp3" with the path to your own audio file
-      var audio = new Audio(../../images/jersey_squeaks.wav);
+      var audio = new Audio("../../images/jersey_squeaks.wav");
       audio.play();
     }
   </script>
