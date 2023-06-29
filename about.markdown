@@ -15,9 +15,8 @@ Violet Robin Schubert is an interdisciplinary artist born in Texas, USA based in
 They strive to find connections between the self and ecology through mixed media work, performance, sculpture, and painting. Bodies as an abstract form, both human and non-human, inspire thought on movement as identity. They devote themselves to community building through art. Creativity is found through shared space, food, movement, music, and conversation. They explore love, compassion, and queerness. 
 
 
-<html>
-<head>
-  <title>Scroll Sound</title>
+
+
   <style>
     /* CSS styles for the image */
     #scroll-image {
@@ -25,9 +24,8 @@ They strive to find connections between the self and ecology through mixed media
       height: 200px;
     }
   </style>
-</head>
-<body>
-  <img id="scroll-image" src="(../../images/NIXIEANT.png)" alt="NIXIE ANT">
+
+  <img id="scroll-image" src="../../images/NIXIEANT.png" alt="NIXIE ANT">
 
   <script>
     var scrollImage = document.getElementById('scroll-image');
@@ -46,8 +44,7 @@ They strive to find connections between the self and ecology through mixed media
       audio.play();
     }
   </script>
-</body>
-</html>
+
 
 
 Nixie Maefly is a painter, sculptural installation artist, musician, and performer. He investigates themes of erotic mysticism, queer mourning, textural interplay and jouissance. Maefly works with fairies, faggots, and tomfoolery.
