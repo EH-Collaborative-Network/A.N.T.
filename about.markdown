@@ -38,13 +38,16 @@ They strive to find connections between the self and ecology through mixed media
     });
 
     scrollImage.addEventListener('mouseleave', function() {
-      scrollImage.removeEventListener('wheel', playSound);
+      pauseSound()
     });
-
+    var audio = new Audio("../../images/jersey_squeaks.wav");
     function playSound() {
       // You can replace the "beep.mp3" with the path to your own audio file
-      var audio = new Audio("../../images/jersey_squeaks.wav");
       audio.play();
+    }
+    function pauseSound() {
+      // You can replace the "beep.mp3" with the path to your own audio file
+      audio.pause();
     }
   </script>
 
