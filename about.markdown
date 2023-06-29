@@ -26,7 +26,7 @@ They strive to find connections between the self and ecology through mixed media
     }
   </style>
  <div id="scroll-image">
-   <img id="scroll-image" src="../../images/NIXIEANT.png" alt="NIXIE ANT">
+   <img src="../../images/NIXIEANT.png" alt="NIXIE ANT">
  </div>
   
 
